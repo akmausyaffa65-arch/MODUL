@@ -2,7 +2,7 @@
 
 ## LAPORAN Website dan Sistem Mobile
 
-![Logo PNL](/img/logo-pnl.png)
+![Logo PNL](img/logo-pnl.png)
 
 ### Disusun Oleh:  
 Nama               : MOH. Akmal Musyaffa

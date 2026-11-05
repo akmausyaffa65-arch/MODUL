@@ -2,7 +2,7 @@
 
 ## LAPORAN WEBSITE DAN SISITEM MOBILE
 
-![Logo PNL](/img/logo-pnl.png)
+![Logo PNL](img/logo-pnl.png)
 
 ### Disusun Oleh:  
 Nama               : MOH. Akmal Musyaffa 
@@ -153,14 +153,14 @@ gh --help
 ```
 Perintah tersebut digunakan untuk melihat bantuan dan daftar perintah yang tersedia pada GitHub CLI. Pada gambar pertama terlihat daftar command seperti auth, repo, issue, pr, dan lainnya.
 
-![membuka git ](/img_1/Membuka-Git-Bash-dan-mengecek-GitHub-CLI.png)
+![membuka git ](img_1/Membuka-Git-Bash-dan-mengecek-GitHub-CLI.png)
 
 ### 2. Melakukan autentikasi GitHub
 ```
 gh extension install foundation50/gh-student
 
 ```
-![membuka git ](/img_1/Melakukan-autentikasi-GitHub.png)
+![membuka git ](img_1/Melakukan-autentikasi-GitHub.png)
 
 ### 3. Clone repository Laradock
 ```
@@ -170,14 +170,14 @@ Receiving objects: 100%
 Resolving deltas: 100%
 ```
 
-![membuka git ](/img_1/Clone-repository-Laradock.png)
+![membuka git ](img_1/Clone-repository-Laradock.png)
 
 
 ### 4. Membuat project Laravel menggunakan Compose
 ```
 composer create-project --prefer-dist laravel/laravel laraweb
 ```
-![membuka git ](/img_1/Membuat-project-Laravel-menggunakan-Compose.png)
+![membuka git ](img_1/Membuat-project-Laravel-menggunakan-Compose.png)
 
 ### 5. Mengecek folder project
 ```
@@ -185,11 +185,11 @@ dir
 cd laraweb
 code .
 ```
-![git](/img_1/Mengecek-folder-project.png)
+![git](img_1/Mengecek-folder-project.png)
 
 
 ### 6. Membuka project Laravel di Visual Studio Code
-![ vs ](/img_1/Membuka-project-Laravel-diVisual-Studio-Code.png)
+![ vs ](img_1/Membuka-project-Laravel-diVisual-Studio-Code.png)
 
 
 ### 7. Membuka Terminal di Visual Studio Code
@@ -206,7 +206,7 @@ terminal VS Code sudah berada di direktori:
 
 D:\semester 5\8. Website dan Sistem Mobile\projek\laraweb
 ```
-![ vs ](/img_1/Membuka_Terminal.png)
+![ vs ](img_1/Membuka_Terminal.png)
 
 ### 8. Menjalankan Laravel Development Server
 ```
@@ -222,7 +222,7 @@ Kemudian server tetap berjalan sampai dihentikan dengan:
 
 Ctrl + C
 ```
-![ vs ](/img_1/Menjalankan-Laravel.png)
+![ vs ](img_1/Menjalankan-Laravel.png)
 ### 9. Membuka aplikasi Laravel di browser
 ```
 Membuka aplikasi Laravel di browser
@@ -233,7 +233,7 @@ http://127.0.0.1:8000
 
 Pada screenshot terakhir berhasil muncul halaman default Laravel, sehingga dapat disimpulkan bahwa project Laravel telah berhasil dijalankan melalui local development server.
 ```
-![ vs ](/img_1/Membuka-aplikasi.png)
+![ vs ](img_1/Membuka-aplikasi.png)
 <br><br>
 
 ## E. Hasil dan Pembahasan
