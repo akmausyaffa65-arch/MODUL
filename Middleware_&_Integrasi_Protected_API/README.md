@@ -2,7 +2,7 @@
 
 ### LAPORAN WEBSITE DAN SISITEM MOBILE
 
-![Logo PNL](/img/logo-pnl.png)
+![Logo PNL](img/logo-pnl.png)
 
 ### Disusun Oleh:  
 Nama               : MOH. Akmal Musyaffa
@@ -186,7 +186,7 @@ D:\semester 5\8. Website dan Sistem Mobile\projek
 
 Screenshot berikut menunjukkan folder kerja dan terminal yang dipakai saat praktikum.
 
-![Folder proyek](images/01-buka-folder-projek.png)
+![Folder proyek](img/01-buka-folder-projek.png)
 
 ### Langkah 1.2. Periksa Node.js
 
@@ -199,7 +199,7 @@ npm -v
 
 Perintah `node -v` menampilkan versi Node.js. Pada screenshot praktikum, versi Node.js yang terlihat adalah `v24.14.0`.
 
-![Pemeriksaan Node.js](images/02-periksa-nodejs.png)
+![Pemeriksaan Node.js](img/02-periksa-nodejs.png)
 
 ### Langkah 1.3. Buat proyek Next.js
 
@@ -211,7 +211,7 @@ npx create-next-app@latest nextweb
 
 Ikuti pertanyaan instalasi. Pada screenshot praktikum, opsi *recommended defaults* dipilih. Tunggu sampai proses instalasi selesai dan muncul pesan keberhasilan pembuatan proyek.
 
-![Membuat proyek Next.js](images/03-buat-proyek-nextjs.png)
+![Membuat proyek Next.js](img/03-buat-proyek-nextjs.png)
 
 > Jika folder `nextweb` sudah ada dan proyek Modul 4 telah dibuat, **jangan membuat proyek baru**. Lanjutkan dengan proyek yang sudah ada agar kode login sebelumnya tidak tertimpa.
 
@@ -236,7 +236,7 @@ Perintah `ls` dapat digunakan untuk memastikan file proyek tersedia:
 ls
 ```
 
-![Instalasi dependensi](images/04-install-dependensi.png)
+![Instalasi dependensi](img/04-install-dependensi.png)
 
 ### Langkah 1.5. Buka proyek di VS Code dan buat file environment
 
@@ -249,7 +249,7 @@ code .
 
 Perintah `touch .env.local` membuat file environment lokal bila belum tersedia. Pada Windows PowerShell, file ini juga dapat dibuat melalui **New File** di VS Code.
 
-![Membuka proyek di VS Code](images/05-buka-proyek-di-vscode.png)
+![Membuka proyek di VS Code](img/05-buka-proyek-di-vscode.png)
 
 ### Langkah 1.6. Konfigurasi URL API
 
@@ -263,7 +263,7 @@ Simpan menggunakan `Ctrl + S`.
 
 Pastikan host `laraweb.test` memang dapat dijangkau dari komputer dan konfigurasi Laravel/hosts yang digunakan pada modul sebelumnya masih aktif. Setelah mengubah `.env.local`, bila server Next.js sedang berjalan, hentikan dengan `Ctrl + C` lalu jalankan lagi `npm run dev` agar variabel dimuat ulang.
 
-![Konfigurasi environment](images/06-konfigurasi-env-local.png)
+![Konfigurasi environment](img/06-konfigurasi-env-local.png)
 
 ---
 
@@ -281,7 +281,7 @@ php artisan route:list --path=api
 
 Perintah tersebut menampilkan daftar route API Laravel. Pada screenshot awal praktikum, route login, logout, refresh token, mahasiswa, dan dosen sudah tersedia.
 
-![Daftar route API Laravel](images/07-periksa-route-api-laravel.png)
+![Daftar route API Laravel](img/07-periksa-route-api-laravel.png)
 
 ### Langkah 2.2. Periksa route dan controller autentikasi
 
@@ -295,11 +295,11 @@ php artisan route:list --path=api -v
 
 Dari konfigurasi praktikum, login berada pada `POST /api/login`, sedangkan route terlindungi menggunakan middleware `auth:api`. Controller autentikasi memakai `JWTAuth`, termasuk pada proses logout.
 
-![Pemeriksaan route dan AuthController](images/08-periksa-api-laravel.png)
+![Pemeriksaan route dan AuthController](img/08-periksa-api-laravel.png)
 
 Pada hasil `route:list -v`, pastikan route terlindungi menampilkan middleware autentikasi API. Route login pada contoh ini berada di luar grup `auth:api`, sedangkan route logout dan refresh token berada di dalam grup tersebut.
 
-![Middleware auth:api](images/09-middleware-auth-api.png)
+![Middleware auth:api](img/09-middleware-auth-api.png)
 
 ### Langkah 2.3. Tambahkan endpoint profil `GET /api/user`
 
@@ -344,7 +344,7 @@ Route::group(['middleware' => 'auth:api'], function () {
 
 Simpan file dengan `Ctrl + S`.
 
-![Menambahkan route user](images/10-edit-routes-api-php.png)
+![Menambahkan route user](img/10-edit-routes-api-php.png)
 
 ### Langkah 2.4. Verifikasi route profil
 
@@ -356,7 +356,7 @@ php artisan route:list --path=api/user -v
 
 Hasil yang diharapkan memuat `GET|HEAD api/user` dan middleware autentikasi API. Jika muncul `ParseError` seperti `Unclosed '{'`, periksa penutup grup route. Fungsi `/user` harus diakhiri dengan `});` dan grup `auth:api` juga harus ditutup dengan `});`.
 
-![Verifikasi route user](images/11-verifikasi-route-user.png)
+![Verifikasi route user](img/11-verifikasi-route-user.png)
 
 ---
 
@@ -561,7 +561,7 @@ export default async function DashboardPage() {
 
 Screenshot kode dashboard pada dokumen sumber memperlihatkan pembacaan cookie `token`, pengiriman header `Authorization: Bearer ...`, dan penggunaan `cache: "no-store"`.
 
-![Kode dashboard Server Component](images/12-kode-dashboard-server-component.png)
+![Kode dashboard Server Component](img/12-kode-dashboard-server-component.png)
 
 ### Penjelasan kode dashboard
 
@@ -613,7 +613,7 @@ export const config = {
 
 Simpan dengan `Ctrl + S`.
 
-![File proxy.ts](images/13-buat-proxy-ts.png)
+![File proxy.ts](img/13-buat-proxy-ts.png)
 
 ### Penjelasan kode Proxy
 
@@ -636,7 +636,7 @@ Di dalam folder `app/dashboard`, buat file:
 app/dashboard/logout-button.tsx
 ```
 
-![Membuat file logout-button.tsx](images/14-buat-logout-button.png)
+![Membuat file logout-button.tsx](img/14-buat-logout-button.png)
 
 Isi file dengan kode berikut:
 
@@ -766,7 +766,7 @@ app/login/page.tsx
 
 Halaman login harus mengirim kredensial ke `POST /api/login`, mengambil token dari respons Laravel, menyimpan token dalam cookie `token`, kemudian mengarahkan pengguna ke `/dashboard`.
 
-![File login pada VS Code](images/15-kode-login-page.png)
+![File login pada VS Code](img/15-kode-login-page.png)
 
 Ganti isi file dengan implementasi berikut. Kode ini menggunakan tema gelap biru-ungu dan tetap mempertahankan integrasi API. State tahun diisi melalui `useEffect` untuk menghindari membaca waktu langsung pada render awal.
 
@@ -1039,7 +1039,7 @@ http://localhost:3002/login
 
 Masukkan email dan password yang telah terdaftar di Laravel. Jika autentikasi berhasil dan respons API berisi token, aplikasi menyimpan cookie `token` lalu mengarahkan pengguna ke `/dashboard`.
 
-![Hasil halaman login](images/17-hasil-halaman-login.png)
+![Hasil halaman login](img/17-hasil-halaman-login.png)
 
 ---
 
@@ -1063,7 +1063,7 @@ Lakukan pengujian berikut secara berurutan. Simpan screenshot hasilnya sebagai b
 3. Pastikan browser diarahkan ke `/dashboard`.
 4. Pastikan dashboard menampilkan nama, ID, dan email dari respons API Laravel.
 
-![Hasil dashboard](images/18-hasil-dashboard.png)
+![Hasil dashboard](img/18-hasil-dashboard.png)
 
 ### Pengujian 3. Pengalihan dari login saat sudah login
 
@@ -1148,7 +1148,7 @@ Periksa tag JSX tepat sebelum baris yang ditunjuk terminal. Pastikan komponen ma
 
 Pastikan semua tag pembuka/penutup dan kurung kurawal seimbang.
 
-![Contoh pesan error compile](images/16-contoh-error-compile.png)
+![Contoh pesan error compile](img/16-contoh-error-compile.png)
 
 ### F. Error `blocking-prerender-current-time-client`
 
@@ -1188,7 +1188,7 @@ Lakukan pengujian berikut secara berurutan. Simpan screenshot hasilnya sebagai b
 3. Pastikan browser diarahkan ke `/dashboard`.
 4. Pastikan dashboard menampilkan nama, ID, dan email dari respons API Laravel.
 
-![Hasil dashboard](images/18-hasil-dashboard.png)
+![Hasil dashboard](img/18-hasil-dashboard.png)
 
 ### Pengujian 3. Pengalihan dari login saat sudah login
 
@@ -1273,7 +1273,7 @@ Periksa tag JSX tepat sebelum baris yang ditunjuk terminal. Pastikan komponen ma
 
 Pastikan semua tag pembuka/penutup dan kurung kurawal seimbang.
 
-![Contoh pesan error compile](images/16-contoh-error-compile.png)
+![Contoh pesan error compile](img/16-contoh-error-compile.png)
 
 ### F. Error `blocking-prerender-current-time-client`
 
